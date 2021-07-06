@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas </title>
+</head>
+<body>
+    <h1> Tabelas </h1>
+
+    <!--tabela com 1 linha e 3 colunas -->
+
+    <table border="1"> 
+        <tr> 
+            <td> Texto 1 </td>
+            <td> Texto 2 </td>
+            <td> Texto 3 </td>
+        </tr>
+
+    </table>
+
+    <!-- tabela com 2 linhas e 3 colunas -->
+
+    <table border="1">
+        <tr>
+            <td> Texto 1 </td>
+            <td> Texto 2 </td>
+            <td> Texto 3 </td>
+        </tr>
+        <tr>
+            <td> Texto 4 </td>
+            <td> Texto 5 </td>
+            <td> Texto 6 </td>
+        </tr>
+    </table>
+
+    <!-- tabela 4x4 -->
+
+    <table border="1" width="900" height="300">
+        <tr height=20>
+            <td width="200"> <b> PRODUTO </b> </td>
+            <td width="200"> <b> QUANTIDADE </b> </td> 
+            <td width="200"> <b> VALOR </b> </td>
+            <td width="200"> <b> ADICIONAR/EXCLUIR </b> </td>
+        </tr>
+
+        <tr>
+            <td> Monitor </td>
+            <td> 30 </td> 
+            <td> R$ 780,00 </td>
+            <td> + | x </td>
+        </tr>
+
+        <tr>
+            <td> Celular </td>
+            <td> 1 </td> 
+            <td> R$ 1.900,00 </td>
+            <td> + | x </td>
+        </tr>
+
+        <tr>
+            <td> TV </td>
+            <td> 6 </td> 
+            <td> R$ 5.000,00 </td>
+            <td> + | x </td>
+        </tr>
+    </table>
+
+    <hr> 
+
+    <!-- exercício abaixo -->
+    <p> Fazer  uma tabela 3 x 5 onde widht="500", height="500" e border="1".</p>
+    
+    <!-- 3 Linhas e 5 Colunas -->
+
+    <table border="1" widht="500" height="500">
+        <tr> 
+            <td> Texto 1 </td>
+            <td> Texto 2 </td>
+            <td> Texto 3 </td>
+            <td> Texto 4 </td>
+            <td> Texto 5 </td>
+        </tr>
+        <tr> 
+            <td> Texto 1 </td>
+            <td> Texto 2 </td>
+            <td> Texto 3 </td>
+            <td> Texto 4 </td>
+            <td> Texto 5 </td>
+        </tr>
+        <tr> 
+            <td> Texto 1 </td>
+            <td> Texto 2 </td>
+            <td> Texto 3 </td>
+            <td> Texto 4 </td>
+            <td> Texto 5 </td>
+        </tr>
+    </table>
+
+    <hr> 
+    
+    <!-- 3 Colunas e 5 Linhas -->
+
+    <table border="1" widht="500" height="500">
+        <tr> 
+            <td> Texto 1 </td>
+            <td> Texto 2 </td>
+            <td> Texto 3 </td>
+        </tr>
+        <tr> 
+            <td> Texto 1 </td>
+            <td> Texto 2 </td>
+            <td> Texto 3 </td>
+        </tr>
+        <tr> 
+            <td> Texto 1 </td>
+            <td> Texto 2 </td>
+            <td> Texto 3 </td>
+        </tr>
+        <tr> 
+            <td> Texto 1 </td>
+            <td> Texto 2 </td>
+            <td> Texto 3 </td>
+        </tr>
+        <tr> 
+            <td> Texto 1 </td>
+            <td> Texto 2 </td>
+            <td> Texto 3 </td>
+        </tr>
+    </table>
+    <hr>
+
+    <h1> Bordas no CSS </h1>
+    <p> Tabela 2x2 </p>
+
+    <table style=" /* Comentário no CSS */ 
+                    /* Lado de Cima */
+                    border-top-width:1px; 
+                    border-top-style:solid; 
+                    border-top-color:black; 
+                    /* Lado Esquerdo*/ 
+                    border-left-width:2px;
+                    border-left-style:dotted;
+                    border-left-color:blue;
+                    /* Lado Direito */
+                    border-right-width:2px;
+                    border-right-style:dotted;
+                    border-right-color:coral;
+                    /* Lado de Baixo */
+                    border-bottom-width:2px;
+                    border-bottom-style:solid;
+                    border-bottom-color:crimson;">
+    
+        <tr>
+            <td> 1 </td>
+            <td> 2 </td>
+        </tr>
+        <tr>
+            <td> 3 </td>
+            <td> 4 </td>
+        </tr>
+    </table>
+
+    <hr> 
+
+    <table style=" /* Todos os Lados Iguais */
+                   border-width:1px; 
+                   border-style:solid; 
+                   border-color:blueviolet;"> 
+   
+        <tr>
+            <td> 1 </td>
+            <td> 2 </td>
+        </tr>
+        <tr>
+            <td> 3 </td>
+            <td> 4 </td>
+        </tr>
+</table>
+
+<hr>
+<h1> Tabela com Título </h1>
+<table border="1" width="300" height="300">
+    <tr>
+        <th> PRODUTO </th>
+        <th> VALOR </th>
+        <th> QUANTIDADE </th>
+    </tr>
+    <tr> 
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+</table>
+
+<hr>
+
+<!-- exercício: fazer tabela conforme exemplo na tela (4x4 com título e borda)-->
+
+<table border="1" width="500" height="200">
+    <tr>
+        <th> Product ID </th>
+        <th> Product Name </th>
+        <th> Product Quality </th>
+        <th> Product Quantity </th>
+    </tr>
+    <tr> 
+        <td> 1 </td>
+        <td> Wheat </td>
+        <td> Good </td>
+        <td> 200 Bags </td>
+    </tr>
+    <tr> 
+        <td> 2 </td>
+        <td> Rice </td>
+        <td> Good </td>
+        <td> 250 Bags </td>
+    </tr>
+    <tr> 
+        <td> 3 </td>
+        <td> Sugar </td>
+        <td> Good </td>
+        <td> 200 Bags </td>
+    </tr>
+</table>
+<hr>
+
+<table border="1" width="500" height="200">
+    <caption> Catálogo de Produtos </caption>
+    <tr>
+        <th> Product ID </th>
+        <th> Product Name </th>
+        <th> Product Quality </th>
+        <th> Product Quantity </th>
+    </tr>
+    <tr> 
+        <td> 1 </td>
+        <td> Wheat </td>
+        <td> Good </td>
+        <td> 200 Bags </td>
+    </tr>
+    <tr> 
+        <td> 2 </td>
+        <td> Rice </td>
+        <td> Good </td>
+        <td> 250 Bags </td>
+    </tr>
+    <tr> 
+        <td> 3 </td>
+        <td> Sugar </td>
+        <td> Good </td>
+        <td> 200 Bags </td>
+    </tr>
+</table>
+<hr>
+
+<h3> Mesclando Colunas (Tabela 3x3) </h3>
+
+<table border="1" width="300" height="300"> 
+    <tr>
+        <td colspan="2"> 1 </td>
+        <!-- <td> 2 </td> -->
+        <td> 3 </td>
+    </tr>
+    <tr>
+        <td> 1 </td>
+        <td colspan="2"> 2 </td>
+        <!-- <td> 3 </td> -->
+    </tr>
+    <tr>
+        <td colspan="3"> 1 </td>
+        <!-- <td> 2 </td>
+        <td> 3 </td> -->
+    </tr>
+</table>
+<hr> 
+
+<h3> Exercício: Tabela 4x4, border="1" width="300" height="300" </h3>
+
+<table border="1" width="300" height="300">
+    <tr>
+        <td colspan="4"> </td>
+    </tr>
+    <tr> 
+        <td colspan="2"> 02 </td>
+        <td colspan="2"> 02 </td>
+    </tr>
+    <tr> 
+        <td colspan="2"> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+    </tr>
+</table>
+<hr>
+
+<h3> Mesclando Linhas - Tabela 3x3 </h3>
+
+<table border="1" width="300" height="300"> 
+    <tr>
+        <td rowspan="2"> </td>
+        <td rowspan="3"> </td>
+        <td rowspan="2"> </td>
+    </tr>
+    <tr>
+
+    </tr>
+    <tr>
+        <td> </td>
+
+        <td> </td>
+    </tr>
+</table>
+<hr> 
+
+<h3> Mesclando Linhas e Colunas (3x3) </h3>
+
+<table border="1" width="300" height="300"> 
+    <tr>
+        <td rowspan="3"> </td>
+        <td colspan="2"> </td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td> </td>
+    </tr>
+</table>
+<hr>
+
+<h3> Tabelas com Seções (Cabeçalho, Corpo e Rodapé) </h3>
+
+<table border="1" width="300" height="300">
+    <thead>
+    <tr> 
+        <th> Título 01 </th>
+        <th> Título 02 </th>
+        <th> Titulo 03 </th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr> 
+        <td> Rodapé 01 </td>
+        <td> Rodapé 02 </td>
+        <td> Rodapé 03 </td>
+    </tr>
+    </tfoot>
+    <tbody> 
+    <tr> 
+        <td> Conteúdo 01 </td>
+        <td> Conteúdo 02 </td>
+        <td> Conteúdo 03 </td>
+    </tr>
+    </tbody>
+</table>
+
+
+</body>
+</html>
+
+<!-- Desenvolvido por Marília Pacífico :) -->

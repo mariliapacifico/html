@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Não Ordenada</title>
+</head>
+<body>
+
+    <h3> Lista Não Ordenada </h3>
+
+    <p> A lista não ordenada é representada por formas de gráficos, conforme 
+    exemplo abaixo:</p>
+
+    <h4> Padrão </h4>
+
+    <ul> 
+        <li> Item 1 </li>
+        <li> Item 2 </li>
+        <li> Item 3 </li>
+        <li> Item 4 </li>
+    </ul>
+    <hr> 
+
+    <h4> Quadrado </h4>
+
+    <p> Tipo de tributos usados na lista <br> 
+    type = [disc, square, circle] - tipo de atributo não se usa mais (realizado via CSS) 
+    </p>
+
+    <ul type="square"> 
+        <li> Item 1 </li>
+        <li> Item 2 </li>
+    </ul>
+    <hr>
+    
+    <h4> Círculo </h4>
+      <ul type="circle"> 
+        <li> Maçã </li>
+        <li> Laranja </li> 
+        <li> Morango </li>
+      </ul> 
+      <hr>
+
+    <h3> CSS </h3>
+    <p> O atributo type e seus valores foram trocados pelo CSS "propriedade". </p>
+    <!-- três formas de aplicar o CSS: 1. inline (atributo style)-->
+    <ul style="list-style-type: circle;"> 
+        <li style="color: blueviolet; font-size:24px;"> Item 1 </li>
+        <li style="color:#FF3399; font-size:20px;"> Item 2 </li>
+        <li style="color: rgb(123, 104, 238); font-size:18px;"> Item 3 </li>
+    </ul>
+    <hr>
+
+    <ul>
+        <li> Home </li>
+        <li> Produtos 
+            <ul>
+              <!-- itens "filhos"-->
+            <li> Informática </li>
+            <li> Livros </li>
+            </ul> 
+        </li>
+        <li> Quem Somos </li>
+        <li> Contato </li>
+    </ul>
+
+</body>
+</html>

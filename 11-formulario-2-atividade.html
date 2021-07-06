@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Cadastre-se </title>
+</head>
+<body>
+    <form action="processa.php" method="post" enctype="multipart/form-data" onsubmit="return false">
+
+        <fieldset>
+          <legend> Dados Pessoais: </legend>
+          <p> * Campos Obrigatórios </p>
+          <div>
+            <label for="nome"> Nome*: </label>
+            <input type="text" name="nome" id="nome" size="50" maxlength="" value="" placeholder="Digite seu nome"
+              required="required" tabindex="1">
+          </div>
+    
+          <div>
+            <label for="sexo"> Gênero:</label>
+            <input type="radio" name="sexo" id="sexo" value="F" checked> Feminino
+            <input type="radio" name="sexo" id="sexo" value="M"> Masculino
+          </div>
+
+          <div>
+            <label for=""> Estado Civil*: </label>
+            <select name="estado civil">
+              <option value="" selected>Selecione</option>
+                <option value=""> Solteiro(a) </option>
+                <option value=""> Casado (a) </option>
+                <option value=""> Divorciado(a) </option>
+                <option value=""> Viúvo(a) </option> 
+            </select>
+          </div>
+          
+          <div>
+            <label for=""> Conhecimento em Informática*:</label>
+            <br>
+            <input type="checkbox" name="windows" id="windows" value="windows"> Windows
+            <input type="checkbox" name="word" id="word" value="word"> Word
+            <input type="checkbox" name="excel" id="excel" value="excel"> Excel <br> 
+            <input type="checkbox" name="powerpoint" id="powerpoint" value="powerpoint"> PowerPoint
+            <input type="checkbox" name="access" id="access" value="access"> Access
+            <input type="checkbox" name="internet" id="internet" value="internet"> Internet
+          </div>
+
+          <div>
+            <label for="">Conte um pouco mais sobre você*:</label>
+            <br>
+            <textarea name="ms" cols="60" rows="15">  </textarea>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend> Dados de Acesso: </legend>
+            <p> * Campos Obrigatórios </p>
+
+            <div> 
+                <label for=""> E-mail*: </label>
+                <input type="text" name="e-mail" id="e-mail" size="50" maxlength="" value="" placeholder="Digite seu e-mail"
+              required="required"> <br> 
+                <label for=""> Senha*: </label>
+                <input type="password" name="senha" id="senha"> <br> 
+                <label for=""> Confirmação*: </label>
+                <input type="password" name="confirma" id="confirma">
+              
+            </div>
+
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+        </form>
+
+</body>
+</html>
